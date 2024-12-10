@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: block;
+  height: 100vh;
+}
+header {
+  display: flex;
+  background-color: #ff8225;
+  padding: 0;
+  width: 100%;
+}
+.nav-container ul {
+  display: flex;
+}
+.nav-container ul li {
+  display: block;
+  color: black;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 10px 15px;
+  font-family: "roboto", sans-serif;
+}
+.nav-container ul li:hover {
+  color: #11101b;
+  background-color: #fefefe;
+}
+.nav-container ul li a.active {
+  color: #11101b;
+  background-color: #fefefe;
+}
+
+h3 {
+  font-family: "roboto", sans-serif;
+  margin-bottom: 10px;
+}
+img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.midContainer {
+  display: flex;
+  height: 250px;
+  margin-top: -5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #ff8225;
+  gap: 20px;
+}
+.infoContainer {
+  width: 33%;
+  height: auto;
+  margin-top: 20px;
+}
+.buttonContainer {
+  height: auto;
+  margin-top: 30px;
+}
+
+p {
+  font-family: "monsterat", sans-serif;
+  font-size: 0.9rem;
+}
+.clickMe {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #ffe5cf;
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+}
+.moreInfoHeader {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.moreInfo {
+  width: 800px;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.downContainer {
+  display: flex;
+  height: 300px;
+  margin-top: 0;
+}
+.downInfo {
+  background-color: white;
+}
+.le-mans-image {
+  width: 150px;
+  height: 100px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  object-fit: fill;
+}
+.nascar-image {
+  width: 150px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  object-fit: fill;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+}
+
+.le-mansInfo {
+  margin-top: 10px;
+  height: 100px;
+}
+.nascarInfo {
+  margin-top: 10px;
+  height: 100px;
+}
+.copyright {
+  height: 40px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: #ff8225;
+}
+@media only screen and (max-width: 1250px) {
+  header{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 0;
+  }
+  .nav-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .reduce {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+  .midContainer {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  .infoContainer {
+    height: auto;
+    width: auto;
+  }
+  .clickMe {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #ffe5cf;
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+  }
+  .downContainer {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  .moreInfo {
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .bottom-right-container {
+    margin-bottom: 10px;
+  }
+}
